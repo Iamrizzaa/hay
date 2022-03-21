@@ -1,0 +1,38 @@
+<html>
+<title>Anxiety</title>
+<!-- stylesheets -->
+<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+<body align=center>
+	<div align=center>
+		<div class="col-md-7">
+			<h1>Rizal Tourist Destination</h1>
+			<h2>Upload a image</h2>
+			<br>
+
+		<form action="" method=post enctype=multipart/form-data>
+			<input type=file name=file align=center>
+			<input type=submit value=Upload align=center>
+		</form>
+
+    <form action="" method=post enctype="multipart/form-data">
+      <input type="text"  name= search placeholder="Search.."  >
+    </form>
+
+    <h2>Results</h2>
+    <br>
+    <center>
+    <table class="table" id="results-table">
+        <tr>
+          <th>Image</th>
+          <th>Prediction</th>
+        </tr>
+		    <tr>
+			     {% block content %}{% endblock %}
+        </tr>
+      </table>
+      </center>
+    </div>
+  </div>
+</body>
+</html>
