@@ -1,6 +1,4 @@
-git commit requrements.txt -m "new one from pip"
-git push heroku
-python==3.7.13
+python-dateutil==3.7.13
 tensorflow==1.5.0
 Flask==0.12.2
 gunicorn==19.7.1
@@ -9,3 +7,5 @@ imutils==0.4.6
 h5py==2.7.1
 Pillow==4.1.1
 MarkupSafe==2.0.1
+Werkzeug==0.16.1
+requests==2.27.1
