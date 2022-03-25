@@ -4,7 +4,7 @@ Flask==0.12.2
 gunicorn==19.7.1
 keras==2.1.5
 imutils==0.4.6
-h5py==3.6.0
+h5py==3.1.0
 Pillow==4.1.1
 MarkupSafe==2.0.1
 
